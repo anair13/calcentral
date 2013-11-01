@@ -1,10 +1,49 @@
-<script type="text/ng-template" id="templates/campus.html">
+<script src="mealPointsController.js" type="text/ng-template" id="templates/campus.html">
 
   <div class="cc-page-campus" data-ng-cloak data-cc-spinner-directive>
 
     <div class="large-9 push-3 columns cc-page-campus-content">
 
       <h1 data-ng-bind="currentTopCategory"></h1>
+
+      <div ng-show="currentTopCategory=='Food & Housing'">
+        <div class="cc-widget" data-ng-show="currentTopCategory">
+          <div class="cc-widget-title">
+            <h2>Cal 1 Card</h2>
+          </div>
+
+          <div class="cc-page-campus-content-subcontainer" >
+            <form ng-controller="MealPointsCtrl">
+              Your current balance: {{money | currency}}<br />
+              <input type="button" id="submit" value="Add Meal Points" data-ng-click="submit()"/>
+            </form>
+          </div>
+        </div>
+
+        <div class="cc-widget" data-ng-show="currentTopCategory" ng-controller="DiningHallCtrl">
+          <div class="cc-widget-title">
+            <h2>Today&rsquo;s Menus</h2>
+          </div>
+
+          <form>
+            <input type="radio" ng-model="option" value="false"> All </input><br />
+            <input type="radio" ng-model="option" value="true"> Open </input><br />
+          </form>
+
+            <input type="text" ng-model="search.$"> </input>
+          <div class="cc-page-campus-content-subcontainer">
+
+            <div class="cc-page-campus-content-subcontainer" data-ng-repeat="hall in halls | filter:hall.open||option=='true' | filter:search">
+              <h3>{{hall.name}} : <span ng-show="{{hall.open}}">Open</span> <span ng-show="{{hall.open}}==false">Closed</span></h3>
+              <ul class="cc-list-links">
+                <li data-ng-repeat="item in hall.menu">
+                  {{item}}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="cc-widget" data-ng-show="currentTopCategory">
         <div class="cc-widget-title">
