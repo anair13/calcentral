@@ -248,8 +248,8 @@
                 <thead>
                   <tr>
                     <th scope="col" width="15%">Date</th>
-                    <th scope="col" width="25%">Advisor</th>
-                    <th scope="col" width="35%">Location</th>
+                    <th scope="col" width="20%">Advisor</th>
+                    <th scope="col" width="40%">Location</th>
                     <th scope="col" width="25%">Description</th>
                   </tr>
                 </thead>
@@ -259,7 +259,7 @@
                     <th scope="row" class="cc-table-subheader">
                       {{appointment.staffFirstName}} {{appointment.staffLastName}}
                     </th>
-                    <th data-ng-bind="appointment.location" scope="row" class="cc-table-subheader"></th>
+                    <th scope="row" class="cc-table-subheader">{{appointment.location}} {{appointment.building}}</th>
                     <th data-ng-bind="appointment.actionType" scope="row" class="cc-table-subheader"></th>
                   </tr>
                 </tbody>

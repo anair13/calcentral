@@ -398,6 +398,11 @@
       }
     };
 
+    $scope.getAppointmentDate = function(dateString) {
+      var t = dateString.split(",");
+      return new Date(t[0], t[1] - 1, t[2]);
+    };
+
     // Wait until user profile is fully loaded before hitting academics data
     $scope.$on('calcentral.api.user.isAuthenticated', function(event, isAuthenticated) {
       if (isAuthenticated) {
