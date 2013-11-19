@@ -137,9 +137,9 @@ financials_proxy:
 
 ls_advising_proxy:
   fake: false
-  base_url: " "
-  key_api: 'the key'
-#  base_url: "http://10.254.4.43/api.php"
+# base_url: "http://localhost:3000/dummy/json/advising_appointment_history.json"
+  key_api: ''
+  base_url: "https://10.254.4.43/api/advisorhistory.php"
 
 blog_latest_release_notes_feed_proxy:
   fake: false
