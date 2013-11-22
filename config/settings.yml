@@ -2,6 +2,7 @@ logger:
   level: <%= ENV['LOGGER_LEVEL'] || WARN %>
   stdout: <%= ENV['LOGGER_STDOUT'] %>
   slow_query_threshold_in_ms: 250
+  slow_request_threshold_in_ms: 60000
 
 application:
   # Set to true if testing production env without Apache/Nginx
@@ -64,12 +65,12 @@ canvas_proxy:
   # Used to import campus users and enrollments
   current_terms_codes: [
     {
-      term_yr: "2013",
-      term_cd: "D"
-    },
-    {
       term_yr: "2014",
       term_cd: "B"
+    },
+    {
+      term_yr: "2013",
+      term_cd: "D"
     }
   ]
   mixed_sis_user_id: true
@@ -141,6 +142,10 @@ ls_advising_proxy:
   key_api: ''
   base_url: "https://10.254.4.43/api/advisorhistory.php"
 
+textbooks_proxy:
+  fake: false
+  base_url: "https://www.bkstr.com"
+
 blog_latest_release_notes_feed_proxy:
   fake: false
   feed_url: "https://ets.berkeley.edu/taxonomy/term/788/all/feed"
@@ -182,6 +187,7 @@ cache:
     CanvasLti: <%= 5.minutes %>
     CanvasCourseStudentsProxy: <%= 15.minutes %>
     CanvasCourseTeachersProxy: <%= 5.minutes %>
+    CanvasCourseProvisioningJobs: <%= 24.hours %>
     MyRegBlocks: 0
 
     CanvasUserSites: <%= 15.minutes %>
@@ -249,6 +255,7 @@ features:
   activity_to_task: false
   financials: false
   telebears: false
+  textbooks: false
 
 messaging:
   enabled: true

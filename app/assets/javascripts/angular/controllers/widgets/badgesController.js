@@ -5,7 +5,18 @@
    * Badges controller
    */
 
-  calcentral.controller('BadgesController', ['$http', '$scope', 'dateService', 'errorService', function($http, $scope, dateService, errorService) {
+  calcentral.controller('BadgesController', [
+    'apiService',
+    'dateService',
+    'errorService',
+    '$http',
+    '$scope',
+    function(
+      apiService,
+      dateService,
+      errorService,
+      $http,
+      $scope) {
 
     var defaults = {
       'bcal': {
@@ -77,6 +88,7 @@
       default_order.forEach(function(value, index) {
         if ($scope.badges.length > index &&
           $scope.badges[index].display.name.toLowerCase() === value) {
+          $scope.badges[index].cssPopover = 'cc-' + $scope.badges[index].display.name + '-popover-status';
           angular.extend($scope.badges[index], raw_data[value]);
         }
       });
@@ -120,6 +132,7 @@
 
     var fetch = function() {
       $http.get('/api/my/badges').success(function(data) {
+        apiService.updatedFeeds.feedLoaded(data);
         decorateBadges(processCalendarEvents(data.badges || {}));
       });
     };
