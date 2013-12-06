@@ -96,6 +96,8 @@ Calcentral::Application.routes.draw do
   match '/act_as' => 'sessions#act_as', :via => :post
   match '/stop_act_as' => 'sessions#stop_act_as', :via => :post
 
+  match '/templates/:partial' => 'templates#get_template', :via => :get
+  
   # All the other paths should use the bootstrap page
   # We need this because we use html5mode=true
   #
