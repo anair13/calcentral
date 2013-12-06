@@ -2,7 +2,20 @@
 
   'use strict';
 
-  angular.module('calcentral.services').service('userService', ['$http', '$location', '$route', 'analyticsService', 'utilService', function($http, $location, $route, analyticsService, utilService) {
+  angular.module('calcentral.services').service('userService', [
+    '$http',
+    '$location',
+    '$route',
+    '$templateCache',
+    'analyticsService',
+    'utilService',
+    function(
+      $http,
+      $location,
+      $route,
+      $templateCache,
+      analyticsService,
+      utilService) {
 
     var profile = {};
     var events = {
@@ -73,6 +86,9 @@
     };
 
     var handleRouteChange = function() {
+      //if ($templateCache.get($route.current.loadedTemplateUrl) == null) {
+      loadTemplate();
+      //}
 
       // When we are in an iframe, we don't load fetch the user api
       // This will mean that isAuthenticated is still false so the refresh API will also not be called
@@ -87,6 +103,12 @@
         handleAccessToPage();
       }
     };
+
+    var loadTemplate = function() {
+      $http.get($route.current.loadedTemplateUrl).success(function(data) {
+        $templateCache.put($route.current.loadedTemplateUrl, data);
+      })
+    }
 
     /**
      * Opt-out.
@@ -143,6 +165,7 @@
       fetch: fetch,
       handleAccessToPage: handleAccessToPage,
       handleRouteChange: handleRouteChange,
+      loadTemplate: loadTemplate,
       handleUserLoaded: handleUserLoaded,
       optOut: optOut,
       profile: profile,

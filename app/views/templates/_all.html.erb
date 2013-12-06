@@ -18,3 +18,11 @@
 <%= render 'templates/canvas_embedded/roster' %>
 <%= render 'templates/canvas_embedded/course_provision' %>
 <%= render 'templates/canvas_embedded/user_provision' %>
+
+<% if Rails.env.production? %>
+	<% Dir.glob(File.join('app', 'views', 'templates', '**', '*.html')).each do |f| %>
+	  <% path = f.split("_", 2).join %>
+	  <% puts path %>
+	  <%= render(path["app/views/".length..-6]) %>
+	<% end %>
+<% end %>
