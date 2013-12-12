@@ -86,9 +86,17 @@
     };
 
     var handleRouteChange = function() {
-      //if ($templateCache.get($route.current.loadedTemplateUrl) == null) {
-      loadTemplate();
-      //}
+      console.log("status");
+      console.log("templates/dashboard.html " + $templateCache.get("templates/dashboard.html"));
+      console.log("templates/academics.html " + $templateCache.get("templates/academics.html"));
+      console.log("templates/campus.html " + $templateCache.get("templates/campus.html"));
+      console.log("templates/splash.html " + $templateCache.get("templates/splash.html"));
+      console.log("fetching " + $route.current.loadedTemplateUrl);
+      console.log("searching templateCache: " + $templateCache.get($route.current.loadedTemplateUrl));
+      if (!$templateCache.get($route.current.loadedTemplateUrl)) {
+        console.log("not found in templateCache");
+        // loadTemplate();
+      }
 
       // When we are in an iframe, we don't load fetch the user api
       // This will mean that isAuthenticated is still false so the refresh API will also not be called
@@ -107,6 +115,7 @@
     var loadTemplate = function() {
       $http.get($route.current.loadedTemplateUrl).success(function(data) {
         $templateCache.put($route.current.loadedTemplateUrl, data);
+        console.log("fetched " + $route.current.loadedTemplateUrl);
       })
     }
 

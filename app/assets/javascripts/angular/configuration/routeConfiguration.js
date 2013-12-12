@@ -97,7 +97,7 @@
     }).
     // Redirect to a 404 page
     otherwise({
-      templateUrl: 'templates/404.html',
+      templateUrl: 'templates/error_404.html',
       controller: 'ErrorController',
       isPublic: true
     });
