@@ -1,42 +1,38 @@
-<script type="text/ng-template" id="templates/campus.html">
+<div class="cc-page-campus" data-ng-cloak data-cc-spinner-directive>
 
-  <div class="cc-page-campus" data-ng-cloak data-cc-spinner-directive>
+  <div class="medium-9 medium-push-3 columns cc-page-campus-content">
 
-    <div class="medium-9 medium-push-3 columns cc-page-campus-content">
+    <h1 data-ng-bind="currentTopCategory"></h1>
 
-      <h1 data-ng-bind="currentTopCategory"></h1>
-
-      <div class="cc-widget" data-ng-show="currentTopCategory">
-        <div class="cc-widget-title">
-          <h2>Links</h2>
-        </div>
-        <div class="cc-page-campus-content-subcontainer" data-ng-repeat="subcategory in subcategories">
-          <h3>{{subcategory}}</h3>
-
-          <ul class="cc-list-links">
-            <li data-ng-repeat="link in links | orderBy:'name' | linksubcategory:subcategory">
-              <a data-ng-href="{{link.url}}"
-                data-ng-click="api.analytics.trackExternalLink('Campus links', subcategory, link.url)"
-                title="{{link.description}}">{{link.name}}</a>
-            </li>
-          </ul>
-        </div>
+    <div class="cc-widget" data-ng-show="currentTopCategory">
+      <div class="cc-widget-title">
+        <h2>Links</h2>
       </div>
+      <div class="cc-page-campus-content-subcontainer" data-ng-repeat="subcategory in subcategories">
+        <h3>{{subcategory}}</h3>
 
-    </div>
-
-    <div class="medium-3 medium-pull-9 columns cc-page-campus-navigation" id="cc-local-navigation">
-
-      <div data-ng-repeat="navitem in navigation">
-        <h3 data-ng-show="navitem.label">{{navitem.label}}</h3>
-        <ul>
-          <li data-ng-class="{'active':(currentTopCategory==category.name)}" data-ng-repeat="category in navitem.categories" data-ng-show="topcategories[category.name]">
-            <a data-ng-href="/campus/{{category.id}}">{{category.name}}</a>
+        <ul class="cc-list-links">
+          <li data-ng-repeat="link in links | orderBy:'name' | linksubcategory:subcategory">
+            <a data-ng-href="{{link.url}}"
+              data-ng-click="api.analytics.trackExternalLink('Campus links', subcategory, link.url)"
+              title="{{link.description}}">{{link.name}}</a>
           </li>
         </ul>
       </div>
-
     </div>
+
   </div>
 
-</script>
+  <div class="medium-3 medium-pull-9 columns cc-page-campus-navigation" id="cc-local-navigation">
+
+    <div data-ng-repeat="navitem in navigation">
+      <h3 data-ng-show="navitem.label">{{navitem.label}}</h3>
+      <ul>
+        <li data-ng-class="{'active':(currentTopCategory==category.name)}" data-ng-repeat="category in navitem.categories" data-ng-show="topcategories[category.name]">
+          <a data-ng-href="/campus/{{category.id}}">{{category.name}}</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
