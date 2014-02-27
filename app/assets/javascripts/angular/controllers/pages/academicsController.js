@@ -295,7 +295,113 @@
       $scope.gpaInit(); // Initialize GPA calculator with selected courses
 
       $scope.telebears = data.telebears;
+      parseSchedule();
+    };
 
+    /**
+     * Finds current semester and stores a sorted list of the schedule
+     * Starts with M 12:00AM
+     */
+    var parseSchedule = function() {
+      $scope.schedule = [];
+
+      var cur_semester; // find current semester in data
+      for (var i = 0; i < $scope.semesters.length; i++) {
+        cur_semester = $scope.semesters[i];
+        if (cur_semester.time_bucket === 'current') {
+          break;
+        }
+      }
+
+      for (var a = 0; a < cur_semester.classes.length; a++) {
+        var klass = cur_semester.classes[a];
+        for (var b = 0; b < klass.sections.length; b++) {
+          var section = klass.sections[b];
+          for (var c = 0; c < section.schedules.length; c++) {
+            var s = section.schedules[c];
+            parseScheduleString(s.schedule, {
+              'buildingName': s.building_name,
+              'roomNumber': s.room_number,
+              'courseName': klass.course_number,
+            });
+          }
+        }
+      }
+
+      $scope.schedule.sort(compareBlocks);
+      $scope.nextClass = $scope.getNextClass();
+      console.log($scope.schedule);
+    };
+
+    var DAY_STRINGS = ['Su', 'M', 'Tu', 'W', 'Th', 'F', 'Sa'];
+
+    /**
+     * Parses strings like "MW 1:00P-2:00P" into a list of objects
+     * Each object has these properties:
+     *
+     * day, startTime, endTime, timeString,
+     * courseName, buildingName, roomNumber
+     */
+    var parseScheduleString = function(s, info) {
+      var space = s.indexOf(' ');
+      var dash = s.indexOf('-');
+      if (space === -1 || dash === -1) {
+        return; // not an acceptable schedule block
+      }
+      info.timeString = s.substring(space + 1);
+      info.startTime = timeToMinutes(s.substring(space + 1, dash));
+      info.endTime = timeToMinutes(s.substring(dash + 1));
+
+      var days = s.substring(0, space);
+      var upper = days.toUpperCase();
+      var j = 0;
+      for (var i = 1; i <= days.length; i++) {
+        if (i === days.length || upper[i] === days[i]) {
+          var day = DAY_STRINGS.indexOf(days.substring(j, i));
+          var block = {};
+          block.day = day;
+          angular.extend(block, info); // a copy of info
+          $scope.schedule.push(block);
+          j = i;
+        }
+      }
+    };
+
+    /** Converts a string like "3:00P" into minutes */
+    var timeToMinutes = function(s) {
+      var colon = s.indexOf(':');
+      var hours = +s.substring(0, colon);
+      var minutes = +s.substring(colon + 1, s.length - 1);
+      if (s[s.length - 1] === 'P') {
+        hours += 12;
+      }
+      return hours * 60 + minutes;
+    };
+
+    var compareBlocks = function(block1, block2) {
+      if (block1.day < block2.day) {
+        return -1;
+      }
+      if (block1.day > block2.day) {
+        return 1;
+      }
+      return block1.startTime - block2.startTime;
+    };
+
+    $scope.getNextClass = function() {
+      return getNextClass(new Date());
+    };
+
+    var getNextClass = function(time) {
+      var day = time.getDay();
+      var minutes = time.getHours() * 60 + time.getMinutes();
+      for (var i = 0; i < $scope.schedule.length - 1; i++) {
+        var b = $scope.schedule[i];
+        if (compareBlocks(b, {day: day, startTime: minutes}) <= 0) {
+          return $scope.schedule[i + 1];
+        }
+      }
+      return $scope.schedule[$scope.schedule.length - 1];
     };
 
     $scope.currentSelection = 'Class Info';
