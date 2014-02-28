@@ -253,7 +253,7 @@
             {{nextClass.courseName}} in {{nextClass.buildingName}} {{nextClass.roomNumber}} from {{nextClass.timeString}}
           </div>
 
-          <div data-cc-map-directive id="map" class="smallmap" style="width: 800px; height: 800px"></div>
+          <div data-cc-map-directive="{{nextClass.buildingName}}" id="map" class="smallmap" style="width: 800px; height: 800px"></div>
         </div>
       </div>
       <div class="medium-4 columns" data-ng-class="{'pull-8':(!api.user.profile.hasStudentHistory)}">

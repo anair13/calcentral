@@ -82,7 +82,7 @@
             new OpenLayers.Projection('EPSG:4326'), // transform from WGS 1984
             map.getProjectionObject() // to Spherical Mercator Projection
         );
-        map.setCenter(center, 15);
+        map.setCenter(center, 16);
 
         function createPopup(feature) {
           feature.popup = new OpenLayers.Popup.FramedCloud('pop',
@@ -114,7 +114,7 @@
 
         function selectByName(name) {
           var id = buildingNames[name];
-          if (id !== null) {
+          if (id != null) {
             var feature = building.getFeatureById(id);
             createPopup(feature);
           }
@@ -129,9 +129,12 @@
           }
         }
 
-        function findBuilding(name) {
-          selectByName(findClosestMatch(name));
-        }
+        attrs.$observe('ccMapDirective', function(buildingName) {
+          console.log(buildingName);
+          if (buildingName != null) {
+            selectByName(findClosestMatch(buildingName));
+          }
+        });
       }
     };
   });
