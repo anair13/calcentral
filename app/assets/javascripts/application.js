@@ -18,4 +18,5 @@
 //= require angular
 //= require angular-route
 //= require angular-sanitize
+//= require openlayers-rails
 //= require_tree .

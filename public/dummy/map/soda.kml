@@ -1,0 +1,1514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Document>
+	<name><![CDATA[Soda Hall]]></name>
+	<open>1</open>
+	<visibility>0</visibility>
+
+	<LookAt>
+		<longitude>-122.258792</longitude>
+		<latitude>37.875653</latitude>
+		<altitude>212.585266500013</altitude>
+		<altitudeMode>relativeToGround</altitudeMode>
+	</LookAt>
+
+	<Style id="radioFolder">
+		<ListStyle>
+			<listItemType>radioFolder</listItemType>
+		</ListStyle>
+	</Style>
+
+	
+
+
+<Folder>
+		<name><![CDATA[1 - First Floor]]></name>
+		<open>0</open>
+		<visibility>0</visibility>
+
+		
+
+<NetworkLink>
+	<name>CAD Floor Plans</name>
+	<open>0</open>
+	<visibility>1</visibility>
+	<Link>
+		<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/Plans.kml</href>
+		<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=309</httpQuery>
+	</Link>
+</NetworkLink>
+
+<Folder>
+	<name>Space Inventory</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name><![CDATA[by Category]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceCtgy.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=309</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=309</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=309</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=309</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=309</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Gross Area</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceGross.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=309</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Room Numbers</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name>Numbers (Only)</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelRoom.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=309</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Square Feet</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelArea.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=309</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=309</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=309</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=309</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=309</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Equipment Data</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+<Folder>
+	<name>Work Order Database</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+
+	</Folder>
+<Folder>
+		<name><![CDATA[2 - Second Floor]]></name>
+		<open>0</open>
+		<visibility>0</visibility>
+
+		
+
+<NetworkLink>
+	<name>CAD Floor Plans</name>
+	<open>0</open>
+	<visibility>1</visibility>
+	<Link>
+		<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/Plans.kml</href>
+		<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=310</httpQuery>
+	</Link>
+</NetworkLink>
+
+<Folder>
+	<name>Space Inventory</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name><![CDATA[by Category]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceCtgy.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=310</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=310</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=310</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=310</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=310</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Gross Area</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceGross.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=310</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Room Numbers</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name>Numbers (Only)</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelRoom.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=310</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Square Feet</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelArea.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=310</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=310</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=310</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=310</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=310</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Equipment Data</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+<Folder>
+	<name>Work Order Database</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+
+	</Folder>
+<Folder>
+		<name><![CDATA[3 - Third Floor]]></name>
+		<open>0</open>
+		<visibility>0</visibility>
+
+		
+
+<NetworkLink>
+	<name>CAD Floor Plans</name>
+	<open>0</open>
+	<visibility>1</visibility>
+	<Link>
+		<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/Plans.kml</href>
+		<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=311</httpQuery>
+	</Link>
+</NetworkLink>
+
+<Folder>
+	<name>Space Inventory</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name><![CDATA[by Category]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceCtgy.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=311</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=311</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=311</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=311</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=311</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Gross Area</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceGross.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=311</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Room Numbers</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name>Numbers (Only)</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelRoom.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=311</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Square Feet</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelArea.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=311</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=311</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=311</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=311</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=311</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Equipment Data</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+<Folder>
+	<name>Work Order Database</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+
+	</Folder>
+<Folder>
+		<name><![CDATA[4 - Fourth Floor]]></name>
+		<open>0</open>
+		<visibility>0</visibility>
+
+		
+
+<NetworkLink>
+	<name>CAD Floor Plans</name>
+	<open>0</open>
+	<visibility>1</visibility>
+	<Link>
+		<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/Plans.kml</href>
+		<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=312</httpQuery>
+	</Link>
+</NetworkLink>
+
+<Folder>
+	<name>Space Inventory</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name><![CDATA[by Category]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceCtgy.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=312</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=312</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=312</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=312</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=312</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Gross Area</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceGross.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=312</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Room Numbers</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name>Numbers (Only)</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelRoom.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=312</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Square Feet</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelArea.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=312</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=312</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=312</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=312</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=312</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Equipment Data</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+<Folder>
+	<name>Work Order Database</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+
+	</Folder>
+<Folder>
+		<name><![CDATA[5 - Fifth Floor]]></name>
+		<open>0</open>
+		<visibility>0</visibility>
+
+		
+
+<NetworkLink>
+	<name>CAD Floor Plans</name>
+	<open>0</open>
+	<visibility>1</visibility>
+	<Link>
+		<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/Plans.kml</href>
+		<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=313</httpQuery>
+	</Link>
+</NetworkLink>
+
+<Folder>
+	<name>Space Inventory</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name><![CDATA[by Category]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceCtgy.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=313</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=313</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=313</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=313</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=313</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Gross Area</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceGross.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=313</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Room Numbers</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name>Numbers (Only)</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelRoom.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=313</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Square Feet</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelArea.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=313</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=313</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=313</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=313</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=313</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Equipment Data</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+<Folder>
+	<name>Work Order Database</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+
+	</Folder>
+<Folder>
+		<name><![CDATA[6 - Sixth Floor]]></name>
+		<open>0</open>
+		<visibility>0</visibility>
+
+		
+
+<NetworkLink>
+	<name>CAD Floor Plans</name>
+	<open>0</open>
+	<visibility>1</visibility>
+	<Link>
+		<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/Plans.kml</href>
+		<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=314</httpQuery>
+	</Link>
+</NetworkLink>
+
+<Folder>
+	<name>Space Inventory</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name><![CDATA[by Category]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceCtgy.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=314</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=314</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=314</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=314</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=314</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Gross Area</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceGross.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=314</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Room Numbers</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name>Numbers (Only)</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelRoom.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=314</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Square Feet</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelArea.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=314</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=314</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=314</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=314</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=314</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Equipment Data</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+<Folder>
+	<name>Work Order Database</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+
+	</Folder>
+<Folder>
+		<name><![CDATA[7 - Seventh Floor]]></name>
+		<open>0</open>
+		<visibility>0</visibility>
+
+		
+
+<NetworkLink>
+	<name>CAD Floor Plans</name>
+	<open>0</open>
+	<visibility>1</visibility>
+	<Link>
+		<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/Plans.kml</href>
+		<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=315</httpQuery>
+	</Link>
+</NetworkLink>
+
+<Folder>
+	<name>Space Inventory</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name><![CDATA[by Category]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceCtgy.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=315</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=315</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=315</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=315</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=315</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Gross Area</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceGross.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=315</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Room Numbers</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name>Numbers (Only)</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelRoom.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=315</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Square Feet</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelArea.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=315</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=315</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=315</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=315</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=315</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Equipment Data</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+<Folder>
+	<name>Work Order Database</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+
+	</Folder>
+<Folder>
+		<name><![CDATA[R - Roof]]></name>
+		<open>0</open>
+		<visibility>0</visibility>
+
+		
+
+<NetworkLink>
+	<name>CAD Floor Plans</name>
+	<open>0</open>
+	<visibility>1</visibility>
+	<Link>
+		<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/Plans.kml</href>
+		<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=316</httpQuery>
+	</Link>
+</NetworkLink>
+
+<Folder>
+	<name>Space Inventory</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name><![CDATA[by Category]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceCtgy.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=316</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=316</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=316</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=316</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=316</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Gross Area</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/SpaceGross.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=316</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Room Numbers</name>
+	<open>0</open>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name>Numbers (Only)</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelRoom.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=316</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Square Feet</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelArea.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=316</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=316</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=316</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>and Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=316</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[and Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/Floor/LabelUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Fkey=316</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+<Folder>
+	<name>Equipment Data</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+<Folder>
+	<name>Work Order Database</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+
+	</Folder>
+
+
+<Folder>
+	<name>Space Inventory</name>
+	<open>0</open>
+	<visibility>0</visibility>
+	<styleUrl>#radioFolder</styleUrl>
+
+	<NetworkLink>
+		<name>by Category</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/SpaceCtgy.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Bkey=77</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Room Use]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/SpaceUsage.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Bkey=77</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Division</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/SpaceDvsn.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Bkey=77</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Department</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/SpaceDept.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Bkey=77</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name><![CDATA[by Program Code]]></name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/SpaceProg.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Bkey=77</httpQuery>
+		</Link>
+	</NetworkLink>
+
+	<NetworkLink>
+		<name>by Gross Area</name>
+		<visibility>0</visibility>
+		<open>0</open>
+		<Link>
+			<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/SpaceGross.kml</href>
+			<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Bkey=77</httpQuery>
+		</Link>
+	</NetworkLink>
+</Folder>
+
+
+
+
+
+
+
+<Folder>
+	<name>Equipment Data</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	
+</Folder>
+
+<Folder>
+	<name>Work Order Database</name>
+	<open>0</open>
+	<visibility>0</visibility>
+
+	<Folder>
+			<name><![CDATA[DIG - CAD Drafting Services]]></name>
+			<open>0</open>
+			<visibility>0</visibility>
+			<styleUrl>#radioFolder</styleUrl>
+
+			<NetworkLink>
+				<name>WO Locations</name>
+				<open>0</open>
+				<visibility>0</visibility>
+				<Link>
+					<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/WorkBook.kml</href>
+					<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Bkey=77&amp;Book=2</httpQuery>
+				</Link>
+			</NetworkLink>
+
+			<NetworkLink>
+				<name>WOs with Text</name>
+				<open>0</open>
+				<visibility>0</visibility>
+				<Link>
+					<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/WorkBookText.kml</href>
+					<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Bkey=77&amp;Book=2</httpQuery>
+				</Link>
+			</NetworkLink>
+
+			
+		
+		<NetworkLink>
+				<name>Point Features (1)</name>
+				<open>0</open>
+				<visibility>0</visibility>
+				<Link>
+					<href>https://berkeley.digicality.com/Integration/GEarth/Buildings/Home/WorkBookPoint.kml</href>
+					<httpQuery>Session=OTc4OTY2OlNULTc4ODQ2My1yR0RkNGNyUDVKYTlFWkh6VDFtcy1jYXMtcDI=&amp;Bkey=77&amp;Book=2</httpQuery>
+				</Link>
+			</NetworkLink>
+
+		
+
+		</Folder>
+
+</Folder>
+
+
+
+</Document>
+</kml>
+
+

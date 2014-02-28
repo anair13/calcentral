@@ -244,7 +244,7 @@
           </div>
         </div>
 
-        <div class="cc-widget">
+        <div class="cc-widget" data-ng-controller="MapController">
           <div class="cc-widget-title">
             <h2>Next Class</h2>
           </div>
@@ -252,6 +252,8 @@
           <div class="cc-widget-padding">
             {{nextClass.courseName}} in {{nextClass.buildingName}} {{nextClass.roomNumber}} from {{nextClass.timeString}}
           </div>
+
+          <div data-cc-map-directive id="map" class="smallmap" style="width: 800px; height: 800px"></div>
         </div>
       </div>
       <div class="medium-4 columns" data-ng-class="{'pull-8':(!api.user.profile.hasStudentHistory)}">
