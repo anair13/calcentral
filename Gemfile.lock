@@ -224,6 +224,8 @@ GEM
       addressable (~> 2.3)
       nokogiri (~> 1.5)
       omniauth (~> 1.1.0)
+    openlayers-rails (0.0.4)
+      railties (>= 3.1)
     parslet (1.4.0)
       blankslate (~> 2.0)
     pikaday-gem (1.1.0.0)
@@ -452,6 +454,7 @@ DEPENDENCIES
   ngmin-rails (~> 0.4.0)
   nokogiri (~> 1.5.9)
   omniauth-cas (~> 1.0.1)
+  openlayers-rails
   pikaday-gem (~> 1.1.0.0)
   placeholder-gem (~> 3.0.0.0)
   pundit (~> 0.2.2)

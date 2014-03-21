@@ -79,6 +79,9 @@ gem "pundit", "~> 0.2.2"
 
 gem "cancan", "~> 1.6.10"
 
+# for graphical mapping
+gem "openlayers-rails"
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
