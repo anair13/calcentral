@@ -320,9 +320,9 @@
           for (var c = 0; c < section.schedules.length; c++) {
             var s = section.schedules[c];
             parseScheduleString(s.schedule, {
-              'buildingName': s.building_name,
-              'roomNumber': s.room_number,
-              'courseName': klass.course_number,
+              'buildingName': s.buildingName,
+              'roomNumber': s.roomNumber,
+              'courseName': klass.course_code,
             });
           }
         }
@@ -330,6 +330,7 @@
 
       $scope.schedule.sort(compareBlocks);
       $scope.nextClass = $scope.getNextClass();
+      console.log($scope.nextClass);
       console.log($scope.schedule);
     };
 
@@ -397,8 +398,8 @@
       var minutes = time.getHours() * 60 + time.getMinutes();
       for (var i = 0; i < $scope.schedule.length - 1; i++) {
         var b = $scope.schedule[i];
-        if (compareBlocks(b, {day: day, startTime: minutes}) <= 0) {
-          return $scope.schedule[i + 1];
+        if (compareBlocks(b, {day: day, startTime: minutes}) > 0) {
+          return $scope.schedule[i];
         }
       }
       return $scope.schedule[$scope.schedule.length - 1];

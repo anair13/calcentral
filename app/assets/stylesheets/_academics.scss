@@ -303,8 +303,12 @@
     }
   }
   .cc-map-infobox {
-    width: 300px;
+    width: 500px;
     font-size: 0.75em;
+    overflow: hidden;
+  }
+  .olFramedCloudPopupContent {
+    overflow: hidden;
   }
 
   @media print {

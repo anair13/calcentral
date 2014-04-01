@@ -254,6 +254,13 @@
           </div>
 
           <div data-cc-map-directive="{{nextClass.buildingName}}" id="map" class="smallmap" style="width: 800px; height: 800px"></div>
+
+          <label>Floor:</label>
+          <input type="text" ng-model="floor">
+          <hr>
+
+          <img src="/dummy/map/{{selectedFeature}}{{floor}}.png"></img>
+
         </div>
       </div>
       <div class="medium-4 columns" data-ng-class="{'pull-8':(!api.user.profile.hasStudentHistory)}">
