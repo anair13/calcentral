@@ -1,0 +1,141 @@
+{
+
+   "college_and_level": {
+
+      "standing": "Graduate",
+
+      "level": "",
+
+      "non_ap_level": "",
+
+      "future_telebears_level": "",
+
+      "colleges": [
+
+         {
+
+            "college": "",
+
+            "major": ""
+
+         }
+
+      ]
+
+   },
+
+   "gpa_units": {
+
+      "cumulative_gpa": 0,
+
+      "total_units": 0
+
+   },
+
+   "requirements": [],
+
+   "regblocks": {
+
+      "available": true,
+
+      "active_blocks": [],
+
+      "inactive_blocks": []
+
+   },
+
+   "semesters": [
+
+      {
+
+         "name": "Spring 2014",
+
+         "slug": "spring-2014",
+
+         "time_bucket": "future",
+
+         "classes": []
+
+      }
+
+   ],
+
+   "exam_schedule": [],
+
+   "telebears": {
+
+      "term": "Spring",
+
+      "year": 2014,
+
+      "slug": "spring-2014",
+
+      "adviser_code_required": {
+
+         "required": true,
+
+         "message": "At CalSO you need to get an adviser code. You need this code to get into Tele-BEARS for your appointment"
+
+      },
+
+      "phases": [
+
+         {
+
+            "period": "Tele-BEARS Phase I",
+
+            "startTime": {
+
+               "epoch": 1383843600,
+
+               "date_time": "2013-11-07T09:00:00-08:00",
+
+               "date_string": "11/07"
+
+            },
+
+            "endTime": {
+
+               "epoch": 1384225200,
+
+               "date_time": "2013-11-11T19:00:00-08:00",
+
+               "date_string": "11/11"
+
+            }
+
+         },
+
+         {
+
+            "period": "Tele-BEARS Phase II",
+
+            "startTime": {
+
+               "epoch": 1384308900,
+
+               "date_time": "2013-11-12T18:15:00-08:00",
+
+               "date_string": "11/12"
+
+            },
+
+            "endTime": {
+
+               "epoch": 1384395300,
+
+               "date_time": "2013-11-13T18:15:00-08:00",
+
+               "date_string": "11/13"
+
+            }
+
+         }
+
+      ],
+
+      "url": "http://registrar.berkeley.edu/tbfaqs.html"
+
+   }
+
+}

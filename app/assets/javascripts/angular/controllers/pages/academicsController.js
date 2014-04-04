@@ -420,7 +420,8 @@
     $scope.$on('calcentral.api.user.isAuthenticated', function(event, isAuthenticated) {
       if (isAuthenticated) {
         $scope.canViewAcademics = $scope.api.user.profile.hasAcademicsTab;
-        $http.get('/api/my/academics').success(parseAcademics);
+        //$http.get('/api/my/academics').success(parseAcademics);
+        $http.get('/dummy/json/future_student_academics.json').success(parseAcademics);
         badgesFactory.getBadges().success(function(data) {
           $scope.studentInfo = data.studentInfo;
         });
